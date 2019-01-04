@@ -1,0 +1,144 @@
+ <!DOCTYPE html>
+
+ <html>
+
+ 
+
+ <head>
+
+<link rel="stylesheet" type="text/css" href="/home/nightwish9191/the_odin_project/etch_a_sketch/style.css">
+
+  <title>EtchASketch</title>
+
+ </head>
+
+ 
+
+ <body>
+
+   <h2>Etch A Sketch</h2>
+
+ 
+
+ 
+
+ <FORM>
+
+<INPUT TYPE="button" onClick="history.go(0)" VALUE="Refresh" id="btn">
+
+</FORM>
+
+ 
+
+ <div id="container"></div>
+
+<br><br>
+
+ 
+
+   <script>
+
+ 
+
+ 
+
+function createGrid(x) {
+
+ 
+
+    for (var rows = 0; rows < x; rows++) {
+
+                    
+
+                    
+
+        for (var columns = 0; columns < x; columns++) {
+
+                                    let container = document.querySelector("#container");
+
+                                    let square = document.createElement("div");
+
+                                                square.className = "grid";
+
+                                                square.setAttribute('style', 'color: blue; background:white; height: 20px; width: 20px');
+
+                                               
+
+            container.append(square);
+
+                                               
+
+        };
+
+                               
+
+  
+
+    };
+
+               
+
+};
+
+ 
+
+function getRandomColor() {
+
+  var letters = '0123456789ABCDEF';
+
+  var color = '#';
+
+  for (var i = 0; i < 6; i++) {
+
+    color += letters[Math.floor(Math.random() * 16)];
+
+  }
+
+  return color;
+
+}
+
+ 
+
+ 
+
+function play(){
+
+createGrid(30);
+
+ 
+
+let square = document.querySelector("div");
+
+square.className = "grid";
+
+ 
+
+ square.addEventListener('mouseover', function(e){
+
+    e.target.style.background = getRandomColor();
+
+ });
+
+
+}
+
+ 
+
+ 
+
+play();
+
+ 
+
+ 
+
+</script>
+
+ 
+
+</body>
+
+ 
+
+</html>

@@ -1,0 +1,85 @@
+#container {
+
+position: relative;
+
+                top: -400px;
+
+                outline:2px solid #000;
+
+                font-size: 0;
+
+                margin:600px;
+
+                height:600px;
+
+                width:600px;
+
+                padding: 0;
+
+                border: none;
+
+background-color: none;
+
+}
+
+ 
+
+ 
+
+ 
+
+.grid{
+
+                margin:0;
+
+                padding:0;
+
+                border:none;
+
+                outline:1px solid #000;
+
+                display:inline-block;
+
+               
+
+                -webkit-transition: all 1s ease;
+
+     -moz-transition: all 1s ease;
+
+       -o-transition: all 1s ease;
+
+      -ms-transition: all 1s ease;
+
+          transition: all 1s ease;
+
+               
+
+}
+
+ 
+
+h2 {
+
+                text-align: center;
+
+               
+
+}
+
+ 
+
+ 
+
+#btn {
+
+               
+
+                position: absolute;
+
+                top: 10%;
+
+                margin-left: 900px;
+
+               
+
+}
